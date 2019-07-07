@@ -14,6 +14,7 @@ class ProductCollection extends Resource
      */
     public function toArray($request)
     {
+        return 'hamba';
         return [
             'name' => $this->name,
             'totalPrice' => round(( 1 - ($this->discount/100)) * $this->price,2),

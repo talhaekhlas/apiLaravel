@@ -25,6 +25,7 @@ class ProductController extends Controller
      */
     public function index()
     { 
+        //return Product::select('name')->with(['reviews'])->get();
         return ProductCollection::collection(Product::paginate(20));
     }
 
